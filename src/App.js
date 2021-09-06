@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider, Flex } from "@chakra-ui/react";
+import CenterBar from "./Components/CenterBar/CenterBar";
+import LeftBar from "./Components/LeftBar/LeftBar";
+import Navbar from "./Components/NavBar/Navbar";
+import RightBar from "./Components/RightBar/RightBar";
+import "./App.scss"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Flex justify="space-evenly">
+        <LeftBar />
+        <Divider orientation="vertical" h="100vh" w="1px" position="sticky" top={0} />
+        <CenterBar />
+        <Divider orientation="vertical" h="100vh" w="1px" position="sticky" top={0} />
+        <RightBar />
+      </Flex>
     </div>
   );
 }

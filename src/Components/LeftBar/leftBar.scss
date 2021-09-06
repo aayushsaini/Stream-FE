@@ -1,0 +1,13 @@
+.left-menu {
+    .menu-item {
+        transition: all 0.5s ease;
+        &:hover {
+            background-color: #6666661a;
+            cursor: pointer;
+        }
+        &.active {
+            border-left: 8px solid #3561F4;
+            height: max-content;
+        }
+    }
+}
