@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, HStack, IconButton, Image, Spacer, Text, useColorMode, Wrap } from '@chakra-ui/react';
+import { Avatar, AvatarBadge, Box, Flex, Grid, HStack, IconButton, Image, Spacer, Text, useColorMode, Wrap } from '@chakra-ui/react';
 import logo from "../../Assets/Images/Logo.png";
 import SearchBar from '../SearchBar/SearchBar';
 import { Divider } from '@chakra-ui/react';
@@ -9,18 +9,37 @@ function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = (colorMode === "dark");
 
+    let userName = "Aayush Singh Saini";
+    console.log(userName.length)
+    if (userName.length > 24) {
+        userName = userName.substr(0,20)+"...";
+    }
+    const userPfp = "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+    const userStatus = "online";
+
     return (
         <Box position="sticky" top={0} backgroundColor="#171717" zIndex="1">
-            <Wrap px="6vw" py="0.5em" justify="space-between" align="center">
-                <Image src={logo} htmlWidth="160rem" />
+            <Wrap px="6vw" py="0.5em"  align="center">
+            {/* <Grid  templateColumns="repeat(12)" gap={6}> */}
+                <Box pr="13vw">
+                    <Image src={logo} htmlWidth="160rem" />
+                </Box>
                 {/* <Spacer /> */}
-                <SearchBar />
-                {/* <Spacer /> */}
-                <Flex align="center">
-                    <Text fontFamily="Poppins" fontWeight="semibold" fontSize="1.2em">Aayush Saini</Text>
-                    <IconButton background="none" _hover="none"_after="none" _activeLink="none" _active="none" icon={ <Image src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                     my={1} boxSize="4vh" objectFit="cover" borderRadius="8px" ml="1.5em" />} onClick={toggleColorMode}></IconButton> 
-                </Flex>
+                <Box px="4.3vw">
+                    <SearchBar />
+                </Box>
+                <Spacer />
+                <Box>
+                    <Flex align="center">
+                        <Text fontFamily="Poppins" fontWeight="semibold" fontSize="1.2em">{userName}</Text>
+                        {/* <IconButton background="none" _hover="none"_after="none" _activeLink="none" _active="none" icon={ <Image src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        my={1} boxSize="4.5vh" objectFit="cover" borderRadius="8px" ml="1.5em" />} onClick={toggleColorMode}></IconButton>  */}
+                        <Avatar name={userName} boxSize="2em" ml="1em" src={userPfp} >
+                            <AvatarBadge boxSize="1em" bg={userStatus==="online"? "green.500": "gray.500"}   />
+                        </Avatar>
+                    </Flex>
+                </Box>
+            {/* </Grid> */}
             </Wrap>
             <Divider />
         </Box>

@@ -1,0 +1,43 @@
+.btn {
+    box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.28);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.28);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.28);
+    transition: all 1s ease;
+    transition: 0.5s;
+    background-size: 200% auto;
+    &:hover {
+        box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.2);
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.2);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(20,102,204,0.2);
+        transition: all 1s ease;
+        background-position: right center;
+    }
+    &:active {
+      background-image: linear-gradient(to right, #8846fa, #5a4efd);
+    }
+    &::after {
+      filter: brightness(5%);
+    }
+}
+
+.btn-grad {background-image: linear-gradient(to right, #8743FF, #4136F1, #8743FF)}
+.btn-grad {
+   display: flex;
+   padding: 0.3em 1.3em 0.3em 1.3em;
+   align-items: center;
+   font-size: 1em;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+  //  box-shadow: 0 0 20px #eee;
+   border-radius: 5px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   cursor: pointer;
+ }
+
