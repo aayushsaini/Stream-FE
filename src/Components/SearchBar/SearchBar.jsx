@@ -10,6 +10,7 @@ function SearchBar() {
             <InputGroup alignItems="center" >
                 <Input mt="0.2em" 
                     backgroundColor="#0D0D0D"
+                    fontSize="sm"
                     border="0px"
                     borderRadius="10px" 
                     width="30vw" 
