@@ -1,4 +1,4 @@
-import { Heading, Flex, Textarea, Button, Text } from '@chakra-ui/react'
+import { Flex, Textarea, Button, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function CenterBar() {

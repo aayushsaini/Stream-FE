@@ -1,4 +1,4 @@
-import { Flex, Divider, Heading, Stack } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 function RightBar() {
