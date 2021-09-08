@@ -13,7 +13,7 @@ function LeftBar() {
                 </Badge>
             </Box>
             <Box className="menu-item" py="0.2em" fontFamily="Poppins" fontWeight="bold" fontSize="1.5em" pl="0.4em">Notifications
-                <Badge ml="2" colorScheme="green">
+                <Badge ml="2" colorScheme="pink">
                     New
                 </Badge>
             </Box>

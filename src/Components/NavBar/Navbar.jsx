@@ -1,16 +1,16 @@
 import React from 'react';
-import { Avatar, AvatarBadge, Box, Flex, Grid, HStack, IconButton, Image, Spacer, Text, useColorMode, Wrap } from '@chakra-ui/react';
+import { Avatar, AvatarBadge, Box, Flex, Image, Spacer, Text, Divider, Wrap } from '@chakra-ui/react';
 import logo from "../../Assets/Images/Logo.png";
 import SearchBar from '../SearchBar/SearchBar';
-import { Divider } from '@chakra-ui/react';
+// import { useColorMode } from '@chakra-ui/react';
 
 function Navbar() {
 
-    const { colorMode, toggleColorMode } = useColorMode();
-    const isDark = (colorMode === "dark");
+    // const { colorMode, toggleColorMode } = useColorMode();
+    // const isDark = (colorMode === "dark");
 
-    let userName = "Aayush Singh Saini";
-    console.log(userName.length)
+    let userName = "Alex Traier";
+    // console.log(userName.length)
     if (userName.length > 24) {
         userName = userName.substr(0,20)+"...";
     }

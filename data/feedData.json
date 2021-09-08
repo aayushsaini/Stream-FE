@@ -1,0 +1,96 @@
+{
+    "posts": [
+        {
+            "postId": "101",
+            "userName": "Ben Bohmer",
+            "userId": "benn__bohmerr",
+            "userImg": "",
+            "postText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo ",
+            "postImg": "",
+            "likes":"",
+            "comments": {
+                "replies": "0",
+                "userName": "Jake Paul"
+            }
+        },
+        {
+            "postId": "101a",
+            "userName": "Ben Bohmer",
+            "userId": "benn__bohmerr",
+            "userImg": "",
+            "postText": "My new House ✨🏡",
+            "postImg": "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "29",
+            "comments": {
+                "replies": "22",
+                "userName": ""
+            }
+        },
+        {
+            "postId": "201",
+            "userName": "Naomi Silvoska",
+            "userId": "silvoskaa_22",
+            "userImg": "https://images.pexels.com/photos/4039183/pexels-photo-4039183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "postText": "From new shoot!",
+            "postImg": "https://images.pexels.com/photos/6280956/pexels-photo-6280956.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "99",
+            "comments": {
+                "replies": "59",
+                "userName":""
+            }
+        },
+        {
+            "postId": "301",
+            "userName": "Javed Naomi",
+            "userId": "__javed_naomi__",
+            "userImg": "https://images.pexels.com/photos/4039183/pexels-photo-4039183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "postText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",
+            "postImg": "https://images.pexels.com/photos/9297975/pexels-photo-9297975.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "8",
+            "comments": {
+                "replies": "6",
+                "userName":""
+            }
+        },
+        {
+            "postId": "401",
+            "userName": "Jill Burrow",
+            "userId": "_jill123",
+            "userImg": "",
+            "postText": "From new shoot!",
+            "postImg": "https://images.pexels.com/photos/5987225/pexels-photo-5987225.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "25",
+            "comments": {
+                "replies":"11",
+                "userName":""
+            }
+        },
+        {
+            "postId": "501",
+            "userName": "Eva Ross",
+            "userId": "evaa_ross",
+            "userImg": "https://images.pexels.com/photos/7955853/pexels-photo-7955853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "postText": "My new pfp 🥴",
+            "postImg": "https://images.pexels.com/photos/7955853/pexels-photo-7955853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "82",
+            "comments": {
+                "replies":"20",
+                "userName":""
+            }
+        },
+        {
+            "postId": "601",
+            "userName": "Susan Hilbert",
+            "userId": "susaaan_berthil",
+            "userImg": "https://images.pexels.com/photos/5857637/pexels-photo-5857637.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "postText": "....",
+            "postImg": "https://images.pexels.com/photos/5857637/pexels-photo-5857637.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "likes": "149",
+            "comments": {
+                "replies":25,
+                "userName":""
+            }
+        }
+
+    ]
+}
