@@ -1,22 +1,24 @@
 import React from 'react';
-import { Icon, Input, InputGroup } from "@chakra-ui/react";
+import { Icon, Input, InputGroup, useColorModeValue, InputRightElement, Stack } from "@chakra-ui/react";
 import { BiSearch  } from "react-icons/all";
-import { InputRightElement } from '@chakra-ui/react';
-import { Stack } from '@chakra-ui/react';
 
 function SearchBar() {
+
+    const inputBackground = useColorModeValue("gray.200","#0D0D0D");
+    const iconBackground = useColorModeValue("gray.500","gray.500");
+
     return (
         <Stack>
             <InputGroup alignItems="center" >
                 <Input mt="0.2em" 
-                    backgroundColor="#0D0D0D"
+                    backgroundColor={inputBackground}
                     fontSize="sm"
                     border="0px"
                     borderRadius="10px" 
                     width="30vw" 
                     placeholder="Type to search..." 
                 />
-                <InputRightElement children={ <Icon mt="0.5em" fontSize="1.3em" textColor="gray.300" ><BiSearch /> </Icon> } />
+                <InputRightElement children={ <Icon mt="0.5em" fontSize="1.3em" textColor={iconBackground} ><BiSearch /> </Icon> } />
             
             </InputGroup>
         </Stack>

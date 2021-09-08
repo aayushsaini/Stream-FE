@@ -1,10 +1,14 @@
-import { Avatar, Box, Flex, Heading, Image, Spacer, Text, VStack } from '@chakra-ui/react'
+import { Avatar, Box, Flex, Heading, Image, Spacer, Text, VStack, useColorModeValue } from '@chakra-ui/react'
 import { React, useEffect, useState } from 'react'
 import { AiOutlineHeart, AiFillHeart, BiCommentDetail } from "react-icons/all"
 
 import "./contentCard.scss"
 
 function ContentCard(props) {
+
+    const cardBackground = useColorModeValue("gray.200","#252525");
+    const textBackground = useColorModeValue("gray.900","gray.300");
+    // rgb(240, 240, 240)
 
     const post = props.postData;
 
@@ -40,7 +44,8 @@ function ContentCard(props) {
         <>
             <Box 
             //  backgroundColor="#1f1f1f"
-            backgroundColor="#252525"
+            // backgroundColor="#252525"
+            backgroundColor={cardBackground}
             minWidth="100%" 
             maxWidth="100%" 
             py={4}
@@ -57,7 +62,7 @@ function ContentCard(props) {
                     <Text textColor="#868686" fontSize="xs" fontWeight="light">13 mins ago</Text>
                 </Flex>
                 <VStack align="flex-start" pt={2}>
-                    <Text px={4} fontSize="sm" fontWeight="light" textColor="rgb(240, 240, 240)">{contentText}</Text>
+                    <Text px={4} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
                     <Image src={contentImg} pb={contentImg?2:0} px={4} userSelect="none"/>
                     {/* <Flex px={4}></Flex> */}
                     <Flex px={4} align="center" userSelect="none">
@@ -72,18 +77,18 @@ function ContentCard(props) {
                             <AiOutlineHeart
                             className="like-button" 
                             size="1.2em" 
-                            color="white" 
+                            color={textBackground}
                             onClick={handleLikeCount}
                             />
                         }
-                        <Text className="like-text" ml={2} mr={4} fontSize="xs" color="lightgray" onClick={handleLikeCount}>{likeCount>0?likeCount:""}</Text>
+                        <Text className="like-text" ml={2} mr={4} fontSize="xs" color={textBackground} onClick={handleLikeCount}>{likeCount>0?likeCount:""}</Text>
                         <BiCommentDetail 
                         className="comment-button" 
                         size="1.2em" 
-                        color="white" 
+                        color={textBackground} 
                         my="2em"
                         />
-                        <Text className="comment-text" ml={2} fontSize="xs" color="lightgray">{comments} Comments</Text>
+                        <Text className="comment-text" ml={2} fontSize="xs" color={textBackground}>{comments} Comments</Text>
                     </Flex>
                 </VStack>
             </Box>

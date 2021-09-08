@@ -1,10 +1,13 @@
 import { Spacer } from '@chakra-ui/react'
-import { Flex, Textarea, Text, Box, VStack, Divider } from '@chakra-ui/react'
+import { Flex, Textarea, Text, Box, VStack, Divider, useColorModeValue } from '@chakra-ui/react'
 import { React } from 'react'
 import "./centerBar.scss"
 import ContentCard from './ContentCard/ContentCard'
 
 function CenterBar() {
+
+    const inputBackground = useColorModeValue("#e1e9f2","#0D0D0D");
+    const divideBg = useColorModeValue("gray.500","gray.50")
 
     const postsData = [
             {
@@ -48,7 +51,7 @@ function CenterBar() {
                 placeholder="Write a post..." 
                 border="none" 
                 borderRadius="12px"
-                backgroundColor="#0D0D0D"
+                backgroundColor={inputBackground}
                 fontSize="0.9em" 
                 pt="1em" pb="1em"
                 />
@@ -56,7 +59,7 @@ function CenterBar() {
                     <Box className="btn-grad"><Text fontSize="xs" fontWeight="extrabold" textColor="">Share now</Text></Box>
                 </Flex>
             </Flex>
-            <Divider pt="0.4em" />
+            <Divider pt="0.4em" colorScheme="twitter"  />
             <VStack w="94%">
                 <Spacer/>
                 {postsData.map((post) => {
