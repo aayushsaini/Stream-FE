@@ -54,6 +54,7 @@ function CenterBar() {
                 backgroundColor={inputBackground}
                 fontSize="0.9em" 
                 pt="1em" pb="1em"
+                // boxShadow="sm"
                 />
                 <Flex flexDirection="row" justify="flex-end" mt="0.8em">
                     <Box className="btn-grad"><Text fontSize="xs" fontWeight="extrabold" textColor="">Share now</Text></Box>

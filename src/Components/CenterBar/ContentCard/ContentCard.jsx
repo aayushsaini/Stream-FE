@@ -51,6 +51,7 @@ function ContentCard(props) {
             py={4}
             className="content-card"
             borderRadius="14px"
+            // boxShadow="sm"
             >
                 <Flex px={4} userSelect="none">
                     <Avatar name={userName} boxSize="2em" src={userImg} />

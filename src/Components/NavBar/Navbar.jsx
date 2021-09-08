@@ -19,7 +19,7 @@ function Navbar() {
     const userStatus = "online";
 
     return (
-        <Box position="sticky" top={0} backgroundColor={isDark?"#171717":"#FFFFFF"} zIndex="1">
+        <Box position="sticky" top={0} backgroundColor={isDark?"#171717":"#FFFFFF"} zIndex="1" boxShadow="md">
             <Wrap px="6vw" py="0.5em"  align="center">
             {/* <Grid  templateColumns="repeat(12)" gap={6}> */}
                 <Box pr="13vw">
