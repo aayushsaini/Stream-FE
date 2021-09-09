@@ -64,7 +64,7 @@ function ContentCard(props) {
                 </Flex>
                 <VStack align="flex-start" pt={2}>
                     <Text px={4} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
-                    <Image src={contentImg} pb={contentImg?2:0} px={4} userSelect="none"/>
+                    <Image src={contentImg} pb={contentImg?2:0} px="" userSelect="none"/>
                     {/* <Flex px={4}></Flex> */}
                     <Flex px={4} align="center" userSelect="none">
                         {liked ?

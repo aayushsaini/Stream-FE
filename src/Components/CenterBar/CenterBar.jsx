@@ -22,13 +22,33 @@ function CenterBar() {
             },
             {
                 postId: "102",
+                userName: "Thea Oliver",
+                userId: "the_a_oliver",
+                userImg: "https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                postText: "....",
+                postImg: "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                likes: "79",
+                comments: "42"
+            },
+            {
+                postId: "103",
                 userName: "Ben Bohmer",
                 userId: "benn__bohmerr",
                 userImg: "",
                 postText: "My new House ✨🏡",
                 postImg: "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 likes: "29",
-                comments: 22
+                comments: "22"
+            },
+            {
+                postId: "104",
+                userName: "David Blain",
+                userId: "david.blain.21",
+                userImg: "https://images.pexels.com/photos/7252301/pexels-photo-7252301.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                postText: "✨",
+                postImg: "https://images.pexels.com/photos/1607848/pexels-photo-1607848.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+                likes: "9",
+                comments: "2"
             },
             {
                 postId: "201",
@@ -38,7 +58,7 @@ function CenterBar() {
                 postText: "From new shoot!",
                 postImg: "https://images.pexels.com/photos/6280956/pexels-photo-6280956.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 likes: "99",
-                comments: 59
+                comments: "59"
             }
     
     ];
