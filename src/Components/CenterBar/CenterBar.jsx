@@ -18,7 +18,7 @@ function CenterBar() {
     const inputBackground = useColorModeValue("#e1e9f2","#0D0D0D");
     const dividerBg = useColorModeValue("gray.200",);
   
-    const { data, isLoading, isError } = useFetch('http://localhost:8000/posts');
+    const { data, isLoading, isError } = useFetch('https://json-server0.herokuapp.com/posts');
 
     return (
         <VStack maxH="fit-content">

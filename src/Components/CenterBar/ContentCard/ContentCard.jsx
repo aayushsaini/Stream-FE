@@ -36,10 +36,6 @@ function ContentCard(props) {
         }
     }
 
-    useEffect(() => {
-        // console.log("content card uE ran");
-    })
-
 
     return (
         <>
