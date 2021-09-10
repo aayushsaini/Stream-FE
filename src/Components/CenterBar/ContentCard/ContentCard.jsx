@@ -1,5 +1,5 @@
-import { Avatar, Box, Flex, Heading, Image, Spacer, Text, VStack, useColorModeValue } from '@chakra-ui/react'
-import { React, useEffect, useState } from 'react'
+import { Avatar, Box, Flex, Heading, Image, Spacer, Text, VStack, useColorModeValue, Icon } from '@chakra-ui/react'
+import { React, useState } from 'react'
 import { AiOutlineHeart, AiFillHeart, BiCommentDetail } from "react-icons/all"
 
 import "./contentCard.scss"
@@ -59,32 +59,31 @@ function ContentCard(props) {
                     <Spacer />
                     <Text textColor="#868686" fontSize="xs" fontWeight="light">13 mins ago</Text>
                 </Flex>
-                <VStack align="flex-start" pt={2}>
+                <VStack align="flex-start" pt={2} pb="0" my="0">
                     <Text px={4} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
                     <Image src={contentImg} pb={contentImg?2:0} px="" userSelect="none"/>
                     {/* <Flex px={4}></Flex> */}
-                    <Flex px={4} align="center" userSelect="none">
+                    <Flex px={4} align="center" userSelect="none" py={0}>
                         {liked ?
-                            <AiFillHeart
-                            size="1.35em" 
+                            <Icon as={AiFillHeart}
+                            w="1.35em" h="1.35em"
                             className="like-button" 
                             color="#FA0D44"
                             onClick={handleLikeCount}
                             />
                         :
-                            <AiOutlineHeart
+                            <Icon as={AiOutlineHeart}
                             className="like-button" 
-                            size="1.35em" 
+                            w="1.35em" h="1.35em"
                             color={textBackground}
                             onClick={handleLikeCount}
                             />
                         }
                         <Text className="like-text" ml={2} mr={4} fontWeight="bold" fontSize="xs" color={textBackground} onClick={handleLikeCount}>{likeCount>0?likeCount:""}</Text>
-                        <BiCommentDetail 
+                        <Icon as={BiCommentDetail} 
                         className="comment-button" 
-                        size="1.2em" 
+                        w="1.2em" h="1.2em"
                         color={textBackground} 
-                        my="2em"
                         />
                         <Text className="comment-text" ml={2} fontSize="xs" color={textBackground}><b>{comments!==1? comments+" Comments" : comments+" Comment"}</b></Text>
                     </Flex>
