@@ -7,7 +7,7 @@ import "./contentCard.scss"
 function ContentCard(props) {
 
     const cardBackground = useColorModeValue("gray.200","#252525");
-    const textBackground = useColorModeValue("gray.900","gray.300");
+    const textBackground = useColorModeValue("gray.900","#dbdbdb");
     // rgb(240, 240, 240)
 
     const post = props.postData;
@@ -21,7 +21,7 @@ function ContentCard(props) {
         contentImg = post.postImg;
     }
     const likes = post.likes;
-    const comments = post.comments;
+    const comments = post.comments.replies;
 
     const [likeCount, setLikeCount] = useState(parseInt(likes));
     const [liked, setLiked] = useState(false);
@@ -37,8 +37,9 @@ function ContentCard(props) {
     }
 
     useEffect(() => {
-        console.log("Use Effect_____")
-    },[])
+        // console.log("content card uE ran");
+    })
+
 
     return (
         <>
@@ -69,7 +70,7 @@ function ContentCard(props) {
                     <Flex px={4} align="center" userSelect="none">
                         {liked ?
                             <AiFillHeart
-                            size="1.2em" 
+                            size="1.35em" 
                             className="like-button" 
                             color="#FA0D44"
                             onClick={handleLikeCount}
@@ -77,19 +78,19 @@ function ContentCard(props) {
                         :
                             <AiOutlineHeart
                             className="like-button" 
-                            size="1.2em" 
+                            size="1.35em" 
                             color={textBackground}
                             onClick={handleLikeCount}
                             />
                         }
-                        <Text className="like-text" ml={2} mr={4} fontSize="xs" color={textBackground} onClick={handleLikeCount}>{likeCount>0?likeCount:""}</Text>
+                        <Text className="like-text" ml={2} mr={4} fontWeight="bold" fontSize="xs" color={textBackground} onClick={handleLikeCount}>{likeCount>0?likeCount:""}</Text>
                         <BiCommentDetail 
                         className="comment-button" 
                         size="1.2em" 
                         color={textBackground} 
                         my="2em"
                         />
-                        <Text className="comment-text" ml={2} fontSize="xs" color={textBackground}>{comments} Comments</Text>
+                        <Text className="comment-text" ml={2} fontSize="xs" color={textBackground}><b>{comments!==1? comments+" Comments" : comments+" Comment"}</b></Text>
                     </Flex>
                 </VStack>
             </Box>

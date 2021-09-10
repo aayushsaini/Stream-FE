@@ -5,7 +5,7 @@ import { Badge } from "@chakra-ui/react"
 
 function LeftBar() {
 
-    const textBackground = useColorModeValue("gray.600","gray.300");
+    const textBackground = useColorModeValue("gray.700","gray.200");
 
     return (
         <Flex className="left-menu" minW="30vw" maxW="30vw" flexDirection="column" color={textBackground} mt="1.2em" pl="5.4em" height="max-content" position="sticky" top="10vh">

@@ -7,20 +7,20 @@
             "userImg": "",
             "postText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo ",
             "postImg": "",
-            "likes":"",
+            "likes":"0",
             "comments": {
                 "replies": "0",
                 "userName": "Jake Paul"
             }
         },
         {
-            "postId": "101a",
-            "userName": "Ben Bohmer",
-            "userId": "benn__bohmerr",
-            "userImg": "",
-            "postText": "My new House ✨🏡",
-            "postImg": "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            "likes": "29",
+            "postId": "102",
+            "userName": "Thea Oliver",
+            "userId": "the_a_oliver",
+            "userImg": "https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "postText": "....",
+            "postImg": "https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "likes": "79",
             "comments": {
                 "replies": "22",
                 "userName": ""
