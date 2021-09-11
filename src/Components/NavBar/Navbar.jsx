@@ -30,7 +30,7 @@ function Navbar() {
                     <SearchBar />
                 </Box>
                 <Spacer />
-                <Box>
+                <Box pr="0.5em">
                     <Flex align="center">
                         <Text fontFamily="Poppins" fontWeight="semibold" fontSize="1.2em">{userName}</Text>
                         {/* <IconButton background="none" _hover="none"_after="none" _activeLink="none" _active="none" icon={ <Image src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
