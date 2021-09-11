@@ -92,5 +92,198 @@
             }
         }
 
+    ],
+    "people": [
+        {
+            "userId":"silvoskaa_22",
+            "userName":"Naomi Silvoska",
+            "userImg":"https://images.pexels.com/photos/4039183/pexels-photo-4039183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "online":"true"
+        },
+        {
+            "userId":"benn_bohmer",
+            "userName":"Ben Bohmer",
+            "userImg":"",
+            "online":"false"
+        },
+        {
+            "userId":"the_a_oliver",
+            "userName":"Thea Oliver",
+            "userImg":"https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "online":"false"
+        },
+        {
+            "userId":"_jill123",
+            "userName":"Jill Burrow",
+            "userImg":"",
+            "online":"true"
+        },
+        {
+            "userId":"susaaan.berthil",
+            "userName":"Susan Hilbert",
+            "userImg":"https://images.pexels.com/photos/5857637/pexels-photo-5857637.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "online":"false"
+        },
+        {
+            "userId":"evaa_ross",
+            "userName":"Eva Ross",
+            "userImg":"https://images.pexels.com/photos/7955853/pexels-photo-7955853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            "online":"true"
+        }
+    ],
+    "chats": [
+        {
+            "recipientUserId":"silvoskaa_22",
+            "recipientName": "Naomi Silvoska",
+            "Conversation":[
+                {
+                    "type":"sent",
+                    "message": "Heyy!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "What's up!?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Hello",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "I am good...you say?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Same..University has just reopened 😮‍💨 Stress is pilling up",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "IKR?!🤣🤣🤣🤣🤣🤣🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Our University is yet to be reopened 🤪 However...we have our end-semesters already scheduled up for the 1st week after the university reopens....I mean...whyyy🥴",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Yeeettt!!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
+                    "timeStamp": "123456"
+                }
+            ]
+        }, 
+        {
+            "recipientUserId":"benn_bohmer",
+            "recipientName": "Ben Bohmer",
+            "Conversation":[
+                {
+                    "type":"sent",
+                    "message": "Heyy!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "What's up!?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Hello",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "I am good...you say?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Same..University has just reopened 😮‍💨 Stress is pilling up",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "IKR?!🤣🤣🤣🤣🤣🤣🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Our University is yet to be reopened 🤪 However...we have our end-semesters already scheduled up for the 1st week after the university reopens....I mean...whyyy🥴",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Yeeettt!!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
+                    "timeStamp": "123456"
+                }
+            ]
+        },
+        {
+            "recipientUserId":"the_a_oliver",
+            "recipientName": "Thae Oliver",
+            "Conversation":[
+                {
+                    "type":"sent",
+                    "message": "Heyy!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "What's up!?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Hello",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "I am good...you say?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Same..University has just reopened 😮‍💨 Stress is pilling up",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "IKR?!🤣🤣🤣🤣🤣🤣🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Our University is yet to be reopened 🤪 However...we have our end-semesters already scheduled up for the 1st week after the university reopens....I mean...whyyy🥴",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Yeeettt!!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
+                    "timeStamp": "123456"
+                }
+            ]
+        }
     ]
 }

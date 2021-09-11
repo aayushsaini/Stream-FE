@@ -8,8 +8,7 @@ function ContentCard(props) {
 
     const cardBackground = useColorModeValue("gray.200","#252525");
     const textBackground = useColorModeValue("gray.900","#dbdbdb");
-    // rgb(240, 240, 240)
-
+    
     const post = props.postData;
 
     const userName = post.userName;

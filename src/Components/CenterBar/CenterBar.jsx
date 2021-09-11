@@ -19,10 +19,11 @@ function CenterBar() {
     const dividerBg = useColorModeValue("gray.200",);
   
     const { data, isLoading, isError } = useFetch('https://json-server0.herokuapp.com/posts');
+    // const { data, isLoading, isError } = useFetch('http://localhost:8000/posts');
 
     return (
-        <VStack maxH="fit-content">
-            {!isError && <Flex minW="40vw" flexDirection="column" px="1.2em" pt="1.2em" mb={0} pb={0}>
+        <VStack minH="max-content" mb={0} pb={0}>
+            {!isError && <Flex minW="40vw" maxW="40vw" flexDirection="column" px="1.2em" pt="1.2em" mb={0} pb={0}>
                 <Textarea minH="5.3em" 
                 resize="none"
                 placeholder="Write a post..." 

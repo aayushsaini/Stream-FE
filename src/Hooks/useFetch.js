@@ -7,31 +7,37 @@ const useFetch = (url) => {
     const [ isError, setIsError ] = useState(false);
 
     useEffect(() => {
-        // fetch('http://localhost:8000/posts')
+        // fetch(url)
         //     .then((response) => {
         //         // console
         //         return response.json();
         //     })
         //     .then((data) => {
-        //         console.log(data);
-        //         setPostsData(data);
+        //         // console.log(data);
+        //         setData(data);
         //         setIsLoading(false);
         //     })
         //     .catch((err) => {
-        //         console.log(err.message);
+        //         // console.log(err.message);
         //         setIsLoading(false);
+        //         setIsError(true)
         //     })
-        axios.get(url)
+        const abort = new AbortController();
+        axios.get(url, { signal: abort.signal})
             .then((res) => {
-                console.log(res);
+                // console.log(res);
                 setData(res.data);
                 setIsLoading(false);
             })
             .catch((err) => {
-                // console.log(err);
-                setIsLoading(false);
-                setIsError(true);
+                if (err.name === "AbortError") {
+                    return;
+                } else {
+                    setIsLoading(false);
+                    setIsError(true);
+                }
             })
+            return () => abort.abort();
     }, [url])
 
     return { data, isLoading, isError }

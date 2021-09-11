@@ -23,7 +23,7 @@ function Navbar() {
             <Wrap px="6vw" py="0.5em"  align="center">
             {/* <Grid  templateColumns="repeat(12)" gap={6}> */}
                 <Box pr="13vw">
-                    <Image src={isDark?logoD:logoL} htmlWidth="160rem" />
+                    <a href="/"><Image src={isDark?logoD:logoL} htmlWidth="160rem" /></a>
                 </Box>
                 {/* <Spacer /> */}
                 <Box px="4.3vw">
@@ -36,7 +36,7 @@ function Navbar() {
                         {/* <IconButton background="none" _hover="none"_after="none" _activeLink="none" _active="none" icon={ <Image src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                         my={1} boxSize="4.5vh" objectFit="cover" borderRadius="8px" ml="1.5em" />} onClick={toggleColorMode}></IconButton>  */}
                         <Avatar name={userName} boxSize="2em" ml="1em" src={userPfp} onClick={toggleColorMode}>
-                            <AvatarBadge boxSize="1em" bg={userStatus==="online"? "green.500": "gray.500"}   />
+                            <AvatarBadge boxSize="1em" bg={userStatus==="online"? "green.400": "gray.500"}   />
                         </Avatar>
                     </Flex>
                 </Box>
