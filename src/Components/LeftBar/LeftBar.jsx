@@ -28,6 +28,7 @@ function LeftBar() {
                     New
                 </Badge> */}
             </Box>
+            <Box className="menu-item" py="0.2em" fontFamily="Poppins" fontWeight="bold" fontSize="1.5em" pl="0.4em">My Profile</Box>
             <Box className="menu-item" py="0.2em" fontFamily="Poppins" fontWeight="bold" fontSize="1.5em" pl="0.4em">Requests</Box>
             <Box className="menu-item" py="0.2em" fontFamily="Poppins" fontWeight="bold" fontSize="1.5em" pl="0.4em">Settings</Box>
         </Flex>
