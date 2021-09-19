@@ -15,13 +15,13 @@ const ChatScreen = () => {
     
     return (
         <VStack>
-            <Box position="sticky" top="3.8em">
+            <Box position="sticky" top="3.8em" zIndex={1}>
                 <ChatHeader name={userName} img={userImg} status={userStatus} />
             </Box>
-            <Box px={6} w="100%">
+            <Box px={6} w="100%" position="sticky" mb="3vh" pt="2vh" maxH="75vh" minH="75vh" zIndex={0} overflowY="scroll">
                 <ChatBody userId={userId} />
             </Box>
-            <Box position="sticky" bottom="1em">
+            <Box borderTop="0.5px solid lightgray" position="sticky" bottom="0vh" py={3} zIndex={1} backdropFilter="blur(15px)">
                 <ChatBottom />
             </Box>
         </VStack>

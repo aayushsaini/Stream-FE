@@ -11,7 +11,7 @@ const ChatBubbles = (props) => {
     const body = props.body;
 
     return (
-        <Flex zIndex={-1000} mb={2}>
+        <Flex zIndex={0} mb={2}>
             {type==="recieved"?
             <>
             <Box 

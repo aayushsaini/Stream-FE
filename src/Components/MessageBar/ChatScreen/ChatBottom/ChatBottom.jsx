@@ -7,7 +7,7 @@ const ChatBottom = () => {
     const inputBackground = useColorModeValue("gray.200","#0D0D0D");
 
     return (
-        <Box minW="40vw" maxW="40vw" px={4} fontFamily="Poppins">
+        <Box minW="40vw" maxW="40vw" px={4} fontFamily="Poppins" backdropFilter="blur(15px)">
             <Flex align="center">
                 <Image src={emojiFace} w="1.6em" h="2.0em" />
                 <Input 
