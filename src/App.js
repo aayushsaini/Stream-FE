@@ -3,7 +3,7 @@ import CenterBar from "./Components/CenterBar/CenterBar";
 import LeftBar from "./Components/LeftBar/LeftBar";
 import Navbar from "./Components/NavBar/Navbar";
 import RightBar from "./Components/RightBar/RightBar";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.scss"
 import MessageBar from "./Components/MessageBar/MessageBar";
 import MessagesRightBar from "./Components/MessagesRightBar/MessagesRightBar"

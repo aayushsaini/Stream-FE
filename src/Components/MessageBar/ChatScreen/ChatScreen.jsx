@@ -21,7 +21,7 @@ const ChatScreen = () => {
             <Box px={6} w="100%" position="sticky" mb="3vh" pt="2vh" maxH="75vh" minH="75vh" zIndex={0} overflowY="scroll">
                 <ChatBody userId={userId} />
             </Box>
-            <Box borderTop="0.5px solid lightgray" position="sticky" bottom="0vh" py={3} zIndex={1} backdropFilter="blur(15px)">
+            <Box position="sticky" bottom="0vh" py={3} zIndex={1} backdropFilter="blur(15px)">
                 <ChatBottom />
             </Box>
         </VStack>
