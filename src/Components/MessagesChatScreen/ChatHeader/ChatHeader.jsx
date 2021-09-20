@@ -14,10 +14,8 @@ const ChatHeader = (props) => {
     const userStatus = props.status;
 
     return (
-        <Box minW="40vw" maxW="40vw" px={4} pt="1.2em" backgroundColor={bgColor} zIndex={100}>
-            <Flex alignItems="center" 
-            //  style={{borderBottom:`1px solid ${borderCol}`}}
-             pb={2} >
+        <Box minW="40vw" maxW="40vw" px={4} pt="1em" mb="0.5em" backgroundColor={bgColor} zIndex={1} maxH="3.5em">
+            <Flex alignItems="center" >
                 <Link to="/messages"><Icon as={IoIosArrowBack} w={6} h={6} mr={3} /></Link> 
                     <Avatar name={userName} src={userImg} boxSize="2em" mr={3} />
                     <Text fontFamily="Poppins" fontSize="xl" fontWeight="bold" textColor={textColor} pr={2}>{userName}</Text>

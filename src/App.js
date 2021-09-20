@@ -1,13 +1,13 @@
-import { Divider, Flex, useColorModeValue } from "@chakra-ui/react";
-import CenterBar from "./Components/CenterBar/CenterBar";
-import LeftBar from "./Components/LeftBar/LeftBar";
+import { Divider, Flex, Spacer, useColorModeValue } from "@chakra-ui/react";
 import Navbar from "./Components/NavBar/Navbar";
-import RightBar from "./Components/RightBar/RightBar";
-import { HashRouter as Router, Route, Switch} from "react-router-dom";
+import LeftBar from "./Components/LeftBar/LeftBar";
+import Home from "./Pages/Home/Home"
+import RightBar from "./Pages/Home/RightBar/RightBar";
+import MessageBar from "./Pages/Messages/MessageBar";
+import MessagesRightBar from "./Pages/Messages/MessagesRightBar";
+import ChatScreen from "./Components/MessagesChatScreen/ChatScreen";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.scss"
-import MessageBar from "./Components/MessageBar/MessageBar";
-import MessagesRightBar from "./Components/MessagesRightBar/MessagesRightBar"
-import ChatScreen from "./Components/MessageBar/ChatScreen/ChatScreen";
 
 function App() {
 
@@ -18,11 +18,12 @@ function App() {
       <div className="App">
         <Navbar />
         <Flex justify="space-evenly">
+          <Spacer />
           <LeftBar />
           <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
           <Switch>
             <Route exact path="/">
-              <CenterBar />
+              <Home />
               <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
               <RightBar />
             </Route>
@@ -38,6 +39,7 @@ function App() {
             </Route>
           </Switch>
         </Flex>
+        <Spacer />
       </div>
     </Router>
   );

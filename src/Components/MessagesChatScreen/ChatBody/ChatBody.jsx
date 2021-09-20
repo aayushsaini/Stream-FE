@@ -1,11 +1,15 @@
 import { Box, Spinner, Text } from '@chakra-ui/react'
 import React from 'react'
-import useFetch from '../../../../Hooks/useFetch';
+import useFetch from '../../../Hooks/useFetch';
 import ChatBubbles from './ChatBubbles';
+import "./chatBody.scss";
 
 const ChatBody = (props) => {
 
     const { data, isLoading, isError } = useFetch('https://json-server0.herokuapp.com/chats');
+
+    // const { data, isLoading, isError } = useFetch('http://locahost:8000/chats');
+    // console.log(data);
     
     // const userId = props.userId;
     // let recipient = null;
@@ -18,14 +22,14 @@ const ChatBody = (props) => {
         //         recipient = userId;
         //         id = i;
         //     }
-        // }
+        // } 
         // conversation = data[id].Conversation;
 
         conversation = data[0].Conversation;
     }
 
     return (
-        <Box position="relative" height="80vh" fontFamily="Poppins" fontSize="0.8em" w="100%">
+        <Box position="relative" height="73vh" fontFamily="Poppins" fontSize="0.8em" w="100%">
             {isLoading && 
             <center>
                 <Spinner

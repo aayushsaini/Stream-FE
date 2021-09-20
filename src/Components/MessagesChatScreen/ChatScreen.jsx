@@ -1,4 +1,4 @@
-import { Box, VStack } from '@chakra-ui/react'
+import { Box, Spacer, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import ChatBody from './ChatBody/ChatBody';
@@ -18,10 +18,10 @@ const ChatScreen = () => {
             <Box position="sticky" top="3.8em" zIndex={1}>
                 <ChatHeader name={userName} img={userImg} status={userStatus} />
             </Box>
-            <Box px={6} w="100%" position="sticky" mb="3vh" pt="2vh" maxH="75vh" minH="75vh" zIndex={0} overflowY="scroll">
+            <Box px={6} w="100%" position="sticky" mb="4vh" pt="2vh" zIndex={0} overflowY="scroll">
                 <ChatBody userId={userId} />
             </Box>
-            <Box position="sticky" bottom="0vh" py={3} zIndex={1} backdropFilter="blur(15px)">
+            <Box position="fixed" bottom="0" zIndex={1} overflowY="hidden">
                 <ChatBottom />
             </Box>
         </VStack>

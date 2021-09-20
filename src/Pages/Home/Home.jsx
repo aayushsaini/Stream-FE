@@ -7,13 +7,13 @@ import { Flex,
          Divider, 
          useColorModeValue } from '@chakra-ui/react'
 import { React } from 'react'
-import "./centerBar.scss"
-import ContentCard from './ContentCard/ContentCard'
-import LoadingContentCard from './ContentCard/LoadingContent/LoadingContentCard';
-import FeedFailed from '../Errors/FeedFailed';
+import "./home.scss"
+import ContentCard from '../../Components/CenterBar/ContentCard/ContentCard'
+import LoadingContentCard from '../../Components/CenterBar/LoadingContent/LoadingContentCard';
+import FeedFailed from '../../Components/Errors/FeedFailed';
 import useFetch from '../../Hooks/useFetch';
 
-function CenterBar() {
+function Home() {
 
     const inputBackground = useColorModeValue("#e1e9f2","#0D0D0D");
     const dividerBg = useColorModeValue("gray.200",);
@@ -53,4 +53,4 @@ function CenterBar() {
     )
 }
 
-export default CenterBar
+export default Home

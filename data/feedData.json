@@ -180,6 +180,95 @@
                     "type":"sent",
                     "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
                     "timeStamp": "123456"
+                },{
+                    "type":"sent",
+                    "message": "Heyy!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "What's up!?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Hello",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "I am good...you say?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Same..University has just reopened 😮‍💨 Stress is pilling up",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "IKR?!🤣🤣🤣🤣🤣🤣🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Our University is yet to be reopened 🤪 However...we have our end-semesters already scheduled up for the 1st week after the university reopens....I mean...whyyy🥴",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Yeeettt!!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Heyy!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "What's up!?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Hello",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "I am good...you say?",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Same..University has just reopened 😮‍💨 Stress is pilling up",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "IKR?!🤣🤣🤣🤣🤣🤣🤣",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"recieved",
+                    "message": "Our University is yet to be reopened 🤪 However...we have our end-semesters already scheduled up for the 1st week after the university reopens....I mean...whyyy🥴",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "Yeeettt!!!",
+                    "timeStamp": "123456"
+                },
+                {
+                    "type":"sent",
+                    "message": "😆😂🤣😂🤣😂🤣😂🤣😂🤣",
+                    "timeStamp": "123456"
                 },
                 {
                     "type":"sent",

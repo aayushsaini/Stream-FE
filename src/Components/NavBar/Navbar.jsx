@@ -19,13 +19,13 @@ function Navbar() {
     const userStatus = "online";
 
     return (
-        <Box position="sticky" top={0} backgroundColor={isDark?"#171717":"#FFFFFF"} zIndex="2" boxShadow="md">
-            <Wrap px="6vw" py="0.5em"  align="center">
+        <Box id="nav" position="sticky" top={0} backgroundColor={isDark?"#171717":"#FFFFFF"} zIndex="2" boxShadow="md">
+            <Wrap px="5em" py="0.5em"  align="center">
             {/* <Grid  templateColumns="repeat(12)" gap={6}> */}
-                <Box pr="13vw">
+                <Box>
                     <a href="/"><Image src={isDark?logoD:logoL} htmlWidth="160rem" /></a>
                 </Box>
-                {/* <Spacer /> */}
+                <Spacer />
                 <Box px="4.3vw">
                     <SearchBar />
                 </Box>
