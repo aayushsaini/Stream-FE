@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Input, useColorModeValue, Spacer } from '@chakra-ui/react'
+import { Button, Flex, Image, Input, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 import emojiFace from "../../../Assets/Images/ChatEmoji@2x.png"
 
