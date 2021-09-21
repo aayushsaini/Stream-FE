@@ -20,21 +20,21 @@ function App() {
         <Flex justify="space-evenly">
           <Spacer />
           <LeftBar />
-          <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
+          <Divider className="separators" borderColor={dividerBg} orientation="vertical"  w="1px" position="sticky" top="62px" />
           <Switch>
             <Route exact path="/">
               <Home />
-              <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
+              <Divider className="separators" borderColor={dividerBg} orientation="vertical" w="1px" position="sticky" top="62px" />
               <RightBar />
             </Route>
             <Route exact path="/messages">
               <MessageBar />
-              <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
+              <Divider className="separators" borderColor={dividerBg} orientation="vertical" w="1px" position="sticky" top="62px" />
               <MessagesRightBar />
             </Route>
             <Route exact path="/messages/:userId">
               <ChatScreen />
-              <Divider borderColor={dividerBg} orientation="vertical" h="92.5vh" w="1px" position="sticky" top="7.5vh" />
+              <Divider className="separators" borderColor={dividerBg} orientation="vertical" w="1px" position="sticky" top="62px" />
               <MessagesRightBar />
             </Route>
           </Switch>

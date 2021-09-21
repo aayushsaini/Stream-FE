@@ -9,7 +9,7 @@ function LeftBar() {
     const textBackground = useColorModeValue("gray.700","gray.50");
  
     return (
-        <Flex className="left-menu" minW="30vw" maxW="30vw" flexDirection="column" color={textBackground} mt="0" pl="5.4em" height="fit-content" position="sticky" top="11vh" userSelect="none">
+        <Flex className="left-menu" minW="30vw" maxW="30vw" flexDirection="column" color={textBackground} pl="5vw" height="fit-content" position="sticky" top="80px" userSelect="none">
             <NavLink exact to="/" activeClassName="menu-item active">
                 <Box className="menu-item" py="0.2em" fontFamily="Poppins" fontWeight="bold" fontSize="1.5em" pl="0.4em">Home</Box>
             </NavLink>

@@ -8,9 +8,7 @@ const ChatBottom = () => {
     const bgColor = useColorModeValue("#F8FAFC","#171717");
 
     return (
-        <Box minW="40vw" maxW="40vw" pt="0.7em" px={4} fontFamily="Poppins" position="sticky" height="8vh" backgroundColor={bgColor}> 
-            <Spacer />
-            <Flex align="center">
+            <Flex py="8px" align="center" minW="40vw" maxW="40vw" px={4} fontFamily="Poppins" position="sticky" backgroundColor={bgColor}>
                 <Image src={emojiFace} w="1.6em" h="2.0em" />
                 <Input 
                     backgroundColor={inputBackground}
@@ -19,9 +17,7 @@ const ChatBottom = () => {
                     fontSize="sm"
                 />
                 <Button backgroundColor="#008cff" textColor="#fff" px={6}  _hover={{backgroundColor:"blue.400"}}>Send</Button>
-
             </Flex>
-        </Box>
     )
 }
 

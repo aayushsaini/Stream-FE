@@ -1,5 +1,9 @@
-#chat-body {
-    padding-top: 0.5em;
-    min-height: 78vh;;
-    max-height: 78vh;
+#chat-screen {
+    max-height: calc(100vh - 62px);
+    min-height: calc(100vh - 62px);
+
+    #chat-body {
+        margin-top: 62px;
+        margin-bottom: 55px;
+    }
 }

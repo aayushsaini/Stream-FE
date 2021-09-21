@@ -29,7 +29,7 @@ const ChatBody = (props) => {
     }
 
     return (
-        <Box position="relative" height="73vh" fontFamily="Poppins" fontSize="0.8em" w="100%">
+        <Box position="relative" fontFamily="Poppins" fontSize="0.8em" w="100%">
             {isLoading && 
             <center>
                 <Spinner
