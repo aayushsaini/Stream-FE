@@ -10,7 +10,7 @@ function MessagesRightBar() {
 
     const { data, isLoading, isError } = useFetch(`https://json-server0.herokuapp.com/people`);
 
-    const [value, setValue] = useState();
+    const [ setValue ] = useState();
 
     const refresh = ()=>{
         setValue({});

@@ -1,6 +1,7 @@
 import { Avatar, Box, Flex, Heading, Image, Spacer, Text, VStack, useColorModeValue, Icon } from '@chakra-ui/react'
 import { React, useState } from 'react'
 import { AiOutlineHeart, AiFillHeart, BiCommentDetail } from "react-icons/all"
+import { NavLink } from 'react-router-dom'
 
 import "./contentCard.scss"
 
@@ -11,6 +12,7 @@ function ContentCard(props) {
     
     const post = props.postData;
 
+    const postId = post.postId;
     const userName = post.userName;
     const userId = "@"+post.userId;
     const userImg = post.userImg;
@@ -39,15 +41,12 @@ function ContentCard(props) {
     return (
         <>
             <Box 
-            //  backgroundColor="#1f1f1f"
-            // backgroundColor="#252525"
             backgroundColor={cardBackground}
             minWidth="100%" 
             maxWidth="100%" 
             py={4}
             className="content-card"
             borderRadius="14px"
-            // boxShadow="sm"
             >
                 <Flex px={4} userSelect="none">
                     <Avatar name={userName} boxSize="2em" src={userImg} />
@@ -59,9 +58,20 @@ function ContentCard(props) {
                     <Text textColor="#868686" fontSize="xs" fontWeight="light">13 mins ago</Text>
                 </Flex>
                 <VStack align="flex-start" pt={2} pb="0" my="0">
-                    <Text px={4} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
-                    <Image src={contentImg} pb={contentImg?2:0} px="" userSelect="none"/>
-                    {/* <Flex px={4}></Flex> */}
+                    { contentImg? 
+                            <Text px={4} pb={1} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
+                        :
+                            <Text px={4} fontSize="sm" fontWeight="" textColor={textBackground}>{contentText}</Text>
+                        }
+                        <NavLink exact to={{
+                            pathname:`/post/${postId}`,
+                            state: {
+                                data: post
+                            }
+                        }}
+                        >
+                            <Image src={contentImg} pb={contentImg?2:0} px="" userSelect="none"/>
+                        </NavLink>
                     <Flex px={4} align="center" userSelect="none" py={0}>
                         {liked ?
                             <Icon as={AiFillHeart}
@@ -84,7 +94,15 @@ function ContentCard(props) {
                         w="1.2em" h="1.2em"
                         color={textBackground} 
                         />
+                        <NavLink exact to={{
+                            pathname:`/post/${postId}`,
+                            state: {
+                                data: post
+                            }
+                        }}
+                        >
                         <Text className="comment-text" ml={2} fontSize="xs" color={textBackground}><b>{comments!==1? comments+" Comments" : comments+" Comment"}</b></Text>
+                        </NavLink>
                     </Flex>
                 </VStack>
             </Box>

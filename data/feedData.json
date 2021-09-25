@@ -2,6 +2,7 @@
     "posts": [
         {
             "postId": "101",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Ben Bohmer",
             "userId": "benn__bohmerr",
             "userImg": "",
@@ -9,12 +10,34 @@
             "postImg": "",
             "likes":"0",
             "comments": {
-                "replies": "0",
-                "userName": "Jake Paul"
+                "replies": "2",
+                "commentsData": [
+                    {
+                        "commentId": 0,
+                        "userName": "Ben Bohmer",
+                        "userId": "benn__bohmerr",
+                        "userImg": "",
+                        "commentBody": "Nice <3 <3",
+                        "likes": "2",
+                        "replies": []
+                    },
+                    {
+                        "commentId": 2,
+                        "userName": "Thea Oliver",
+                        "userId": "the_a_oliver",
+                        "userImg": "https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                        "commentBody": "Amazing post 🌻 🌻",
+                        "likes": "1",
+                        "replies": [
+
+                        ]
+                    }
+                ]
             }
         },
         {
             "postId": "102",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Thea Oliver",
             "userId": "the_a_oliver",
             "userImg": "https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -28,6 +51,7 @@
         },
         {
             "postId": "201",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Naomi Silvoska",
             "userId": "silvoskaa_22",
             "userImg": "https://images.pexels.com/photos/4039183/pexels-photo-4039183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -41,6 +65,7 @@
         },
         {
             "postId": "301",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Javed Naomi",
             "userId": "__javed_naomi__",
             "userImg": "https://images.pexels.com/photos/4039183/pexels-photo-4039183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -54,6 +79,7 @@
         },
         {
             "postId": "401",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Jill Burrow",
             "userId": "_jill123",
             "userImg": "",
@@ -67,6 +93,7 @@
         },
         {
             "postId": "501",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Eva Ross",
             "userId": "evaa_ross",
             "userImg": "https://images.pexels.com/photos/7955853/pexels-photo-7955853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -80,6 +107,7 @@
         },
         {
             "postId": "601",
+            "postTime": "22:11:00 TUE 2021",
             "userName": "Susan Hilbert",
             "userId": "susaaan_berthil",
             "userImg": "https://images.pexels.com/photos/5857637/pexels-photo-5857637.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
